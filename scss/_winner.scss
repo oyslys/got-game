@@ -1,0 +1,32 @@
+
+
+.winner {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    .name-winner {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+      .winner-name {
+        color: white;
+        font-size: 16px;
+        font-family: 'Fondamento',cursive;
+        font-weight: 600;
+      }
+      .winnerback{
+        background-image: url("../media/treeback.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        width: 100%;
+      }
+.winnerh1{
+  font-family: 'Helvetica', cursive;
+  font-weight: 700;
+  color: white;
+}

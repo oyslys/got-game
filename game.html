@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Play</title>
+	<link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<body class="gametree">
+
+
+<div class="textin-center">
+	<p class="h1main">Game of Thrones</p>
+	<div class="players">
+		<div class="player-container player1">
+			<p>Player 1:</p>
+			<div class="shield-player1"></div>
+		</div>
+
+		<div class="vs"><h2>VS</h2></div>
+		<div class="player-container player2">
+			<p>Player 2:</p>
+			<div class="shield-player2"></div>
+		</div>
+	</div>
+
+	<div class="game-container">
+		<div class="player1-dice-container dice-container">
+			<div id="dice1" class="dice1"></div>
+			<div class="start-here">Start!</div>
+			<a id="roll1" class="button margin dice1button">Roll</a>
+			<p class="position"><u>Position: <span id="position1"></span></u></p>
+			<div id="gamelog1" class="gamelog"></div>
+		</div>
+		<div class="game-wrapper">
+
+			<div class="startcolor">Start</div> <br>
+
+
+			<div id="game-area" class="game-area">
+				<div class="obstacle-container">
+					<div class="obstacle">
+						<h4 class="obstacle-text obstacle-text1"></h4>
+						<h4 class="obstacle-text obstacle-text2"></h4>
+						<h4 class="obstacle-text obstacle-text3"></h4>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="finishcolor">Finish</div>
+		</div>
+
+		<div class="player2-dice-container dice-container">
+			<div id="dice2" class="dice2"></div>
+			<a id="roll2" class="button margin s">Roll</a>
+			<p class="position"><u>Position: <span id="position2"></span></u></p>
+			<div id="gamelog2" class="gamelog"></div>
+		</div>
+	</div>
+	<br>
+	<a class="button margin" href="index.html">Back</a>
+	<div class="gamelog-container">
+
+	</div>
+</div>
+<script src="script/game.js"></script>
+</body>
+</html>

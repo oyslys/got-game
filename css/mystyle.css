@@ -1,0 +1,351 @@
+.background-page1 {
+  background-image: url("../media/treeback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.textin-center {
+  text-align: center;
+}
+
+.container-flex {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.h1main {
+  font-family: "Fondamento", cursive;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px;
+  z-index: 3;
+  left: 0;
+  font-size: 44px;
+  padding: 10px;
+  color: white;
+}
+
+.start-button {
+  background-color: #161616;
+  border: 2px solid black;
+  color: white;
+  z-index: 3;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.click-button {
+  font-size: 10px;
+  margin: 0;
+  color: white;
+  font-family: "Helvetica", sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  cursor: pointer;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.card p {
+  user-select: none;
+  margin: 2px;
+}
+
+.badge1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 3px 0 #262626;
+  font-family: "Helvetica", cursive;
+  font-weight: 700;
+  width: 270px;
+  height: 50px;
+  position: absolute;
+  top: 127px;
+  background-color: white;
+  font-size: 30px;
+  color: black;
+  background-color: white;
+}
+
+.badge1:after {
+  content: "Player 1";
+}
+
+.badge2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 3px 0 #262626;
+  font-family: "Helvetica", cursive;
+  font-weight: 700;
+  width: 270px;
+  height: 50px;
+  position: absolute;
+  top: 127px;
+  background-color: white;
+  font-size: 30px;
+  background-color: white;
+  color: black;
+}
+
+.badge2:after {
+  content: "Player 2";
+}
+
+.shield {
+  width: 100px;
+  transition: all 0.2s;
+}
+
+.gametree {
+  background-image: url("../media/treeback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.player-container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player-container p {
+  color: white;
+  font-size: 20px;
+}
+
+.vs {
+  padding: 44px 20px;
+  color: white;
+}
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.gamelog {
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.gamelog p {
+  margin: 0;
+}
+
+.game-wrapper {
+  position: relative;
+}
+
+.game-area {
+  background-image: url("../media/backtest1.jpg");
+  background-size: contain;
+  width: 700px;
+  height: 500px;
+  position: relative;
+}
+
+.gameshield {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  transform: rotate(10deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.obstacle-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.obstacle {
+  z-index: 4;
+  height: 440px;
+  width: 660px;
+  background-color: #161616;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.obstacle-text {
+  color: white;
+  margin: 10px;
+}
+
+.obstacle-text2 {
+  font-size: 53px;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px black;
+  margin-top: -14px;
+  color: white;
+}
+
+@media screen and (max-width: 730px) {
+  .game-wrapper {
+    transform: scale(0.6);
+  }
+}
+@media screen and (max-width: 445px) {
+  .game-wrapper {
+    transform: scale(0.4);
+    transform-origin: top;
+    margin-top: 20px;
+  }
+}
+.animate-logo {
+  animation: animateLogo 3s 1 0s ease;
+}
+
+@keyframes animateLogo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-320px);
+  }
+}
+@media screen and (max-width: 730px) {
+  .player-container {
+    padding: 0 5px !important;
+  }
+
+  .margin {
+    margin: 2px;
+  }
+
+  .shield {
+    width: 70px !important;
+  }
+
+  .vs h2 {
+    font-size: 30px;
+  }
+}
+.gamelog, .position {
+  display: none !important;
+}
+
+.start-here {
+  color: white;
+  font-size: 20px;
+}
+
+.finishcolor {
+  color: white;
+}
+
+.startcolor {
+  color: white;
+}
+
+.button {
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  background-color: #161616;
+  border: 2px solid black;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.winner {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-winner {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.winner-name {
+  color: white;
+  font-size: 16px;
+  font-family: "Fondamento", cursive;
+  font-weight: 600;
+}
+
+.winnerback {
+  background-image: url("../media/treeback.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  width: 100%;
+}
+
+.winnerh1 {
+  font-family: "Helvetica", cursive;
+  font-weight: 700;
+  color: white;
+}
+
+/*# sourceMappingURL=mystyle.css.map */

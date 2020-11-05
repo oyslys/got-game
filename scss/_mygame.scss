@@ -1,0 +1,150 @@
+.gametree{
+  background-image: url("../media/treeback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.player-container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+    .player-container p {
+      color: white;
+      font-size: 20px;
+    }
+      .vs {
+    padding: 44px 20px;
+    color: white;
+  }
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+      .gamelog {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+    .gamelog p {
+      margin: 0;
+    }
+       .game-wrapper {
+    position: relative;
+  }
+
+    .game-area {
+      background-image: url("../media/backtest1.jpg");
+      background-size: contain;
+      width: 700px;
+      height: 500px;
+      position: relative;
+
+    }
+      .gameshield {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 50px;
+        transform: rotate(10deg);
+        transition: all .5s ease-in-out;
+      }
+      .obstacle-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        .obstacle {
+          z-index: 4;
+          height: 440px;
+          width: 660px;
+          background-color: #161616;
+          background-position: center;
+          background-size: cover;
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+          .obstacle-text {
+            color: white;
+            margin: 10px;
+          }
+
+          .obstacle-text2 {
+            font-size: 53px;
+            text-decoration: underline;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 1px black;
+            margin-top: -14px;
+            color: white;
+          }
+
+    @media screen and (max-width: 730px) {
+      .game-wrapper {
+        transform: scale(0.6);
+      } }
+    @media screen and (max-width: 445px) {
+          .game-wrapper {
+        transform: scale(0.4);
+        transform-origin: top;
+        margin-top: 20px;
+      } }
+
+
+
+.animate-logo {
+  animation: animateLogo 3s 1 0s ease; }
+
+@keyframes animateLogo {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-320px); } }
+@media screen and (max-width: 730px) {
+  .player-container {
+    padding: 0 5px !important; }
+
+  .margin {
+    margin: 2px; }
+
+  .shield {
+    width: 70px !important; }
+
+  .vs h2 {
+    font-size: 30px; } }
+
+
+.gamelog, .position {
+  display: none !important; }
+
+.start-here {
+  color: white;
+  font-size: 20px;
+}
+.finishcolor{
+  color: white;
+}
+ .startcolor{
+   color: white;
+ }
